@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Petit Moka</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-900">
+
+  <!-- Hero -->
+  <header class="h-screen flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50">
+
+    <!-- Logo encima del nombre -->
+    <div class="logo-highlight" >
+  <img src="img/logo.png" alt="Logo Le Petit Moka">
+  </div>
+    <h1 class="highlight mb-20">Le Petit Moka</h1>
+    <p class="text-2xl italic mb-6">Tu rincón de café en Denia</p>
+  </header>
+
+  <!-- Historia -->
+  <section class="full-section section-spacing mt-40 max-w-4xl mx-auto p-12 glass shadow-xl mt-10 fade-in">
+    <h2 class="text-4xl font-bold text-[var(--moka-gold)] mb-6">Nuestra Historia</h2>
+    <p class="text-lg leading-relaxed">En el corazón del Paseo de Saladar, Denia, nació un rincón pensado para los amantes del buen café y los momentos compartidos. Le Petit Moka no es solo una cafetería: es un espacio donde cada detalle cuenta, desde el aroma del café recién molido hasta la calidez de sus mesas que invitan a quedarse un poco más.<br><br>
+
+La idea surgió de un sueño sencillo: crear un lugar donde la tradición del café se mezclara con la modernidad de los sabores y la estética. Inspirados por los paseos bajo el sol mediterráneo y la brisa del mar, sus fundadores imaginaron un sitio que transmitiera cercanía, frescura y creatividad.<br><br>
+
+En Le Petit Moka, los gofres crujientes, los batidos llamativos y las tartas icónicas como el Red Velvet se convierten en protagonistas de historias cotidianas: desayunos que empiezan con energía, tardes de charla entre amigos, celebraciones improvisadas que terminan con una sonrisa y un dulce en la mano.<br><br>
+
+Más que un café, Le Petit Moka es un punto de encuentro. Aquí, los clientes no solo disfrutan de productos, sino que se convierten en parte de una comunidad que celebra la vida con pequeños placeres. Cada visita es distinta, pero todas comparten un mismo hilo conductor: la pasión por ofrecer experiencias memorables.<br><br>
+
+Hoy, en el Paseo de Saladar, Le Petit Moka sigue creciendo con la misma esencia que lo vio nacer: un lugar moderno, acogedor y lleno de sabor, donde cada taza de café cuenta una historia y cada cliente forma parte de ella.</p>
+  </section>
+
+  <!-- Galería como carrusel -->
+  <section id="galeria" class="full-section section-spacing p-12 fade-in glass max-w-5xl mx-auto mt-10 shadow-xl">
+    <h2 class="text-4xl font-bold text-center text-[var(--moka-gold)] mb-8">Galería</h2>
+    <div class="carousel">
+      <div class="carousel-track">
+        <img src="img/cafe.jpeg" alt="">
+        <img src="img/croissants.webp" alt="">
+        <img src="img/donuts.jpg" alt="">
+        <img src="img/tostadas.jpg" alt="">
+      </div>
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="full-section section-spacing max-w-4xl mx-auto p-12 mt-10 glass rounded-xl shadow-lg fade-in">
+    <h2 class="text-4xl font-bold text-center text-[var(--moka-gold)] mb-8">❤️ Opiniones</h2>
+    <div class="space-y-6 text-lg">
+      <blockquote class="bg-white bg-opacity-70 p-6 rounded-xl shadow">“El mejor café de Denia, ambiente acogedor y trato excelente.” – Marta</blockquote>
+      <blockquote class="bg-white bg-opacity-70 p-6 rounded-xl shadow">“Las tartas son espectaculares, siempre vuelvo.” – Juan</blockquote>
+         <blockquote class="bg-white bg-opacity-70 p-6 rounded-xl shadow">“El mejor café de Denia, ambiente acogedor y trato excelente.” – Marta</blockquote>
+      <blockquote class="bg-white bg-opacity-70 p-6 rounded-xl shadow">“Las tartas son espectaculares, siempre vuelvo.” – Juan</blockquote>
+         <blockquote class="bg-white bg-opacity-70 p-6 rounded-xl shadow">“El mejor café de Denia, ambiente acogedor y trato excelente.” – Marta</blockquote>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="full-section contacto" class="full-section section-spacing max-w-xl mx-auto p-12 glass shadow-xl mt-10 rounded-xl fade-in">
+    <h2 class="text-4xl font-bold mb-6 text-center text-[var(--moka-gold)]">📩 Contáctanos</h2>
+    <div align="center">Teléfono: 604 132 714<br>
+      Correo: info@lepetitmoka.com<br><br></div>
+    <form action="mailto:lavcorrales@gmail.com" method="POST" enctype="text/plain" class="space-y-6">
+      <input type="text" name="nombre" placeholder="Nombre" class="w-full border p-3 rounded focus:ring focus:ring-[var(--moka-gold)]" required>
+      <input type="email" name="email" placeholder="Correo electrónico" class="w-full border p-3 rounded focus:ring focus:ring-[var(--moka-gold)]" required>
+      <textarea name="mensaje" placeholder="Mensaje" class="w-full border p-3 rounded focus:ring focus:ring-[var(--moka-gold)]" required></textarea>
+      <button type="submit" class="btn-moka w-full">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient-bg text-white text-center p-6 mt-12 fade-in">
+    <p>&copy; 2025 Le Petit Moka - Todos los derechos reservados</p>
+  </footer>
+
+<!-- Botones flotantes redes -->
+<div class="social-fixed">
+  <a href="https://wa.me/34123456789" target="_blank" rel="noopener noreferrer" title="WhatsApp">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" 
+         alt="WhatsApp" class="w-8 h-8">
+  </a>
+  <a href="https://instagram.com/lepetitmoka" target="_blank" rel="noopener noreferrer" title="Instagram">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" 
+         alt="Instagram" class="w-8 h-8">
+  </a>
+  <a href="https://tiktok.com/@lepetitmoka" target="_blank" rel="noopener noreferrer" title="TikTok">
+    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" 
+         alt="TikTok" class="w-8 h-8">
+  </a>
+</div>
+
+
+
+  <!-- Script animaciones scroll + carrusel -->
+  <script>
+   
+  </script>
+  <script src="scripts/script.js"></script>
+</body>
+</html>

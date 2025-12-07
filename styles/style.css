@@ -1,0 +1,159 @@
+:root {
+      --moka-brown: #4B2E2E;
+      --moka-gold: #D9A679;
+    }
+    body {
+      background-image: url('../img/main.webp');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+    .btn-moka {
+      background-color: var(--moka-brown);
+      color: white;
+      transition: 0.3s;
+      border-radius: 9999px;
+      padding: 0.75rem 1.5rem;
+    }
+    .btn-moka:hover {
+      background-color: var(--moka-gold);
+      transform: scale(1.05);
+    }
+    .highlight {
+      font-size: 5rem;
+      font-weight: 900;
+      color: var(--moka-gold);
+      text-shadow: 0 0 20px rgba(217,166,121,0.8), 0 0 40px rgba(75,46,46,0.8);
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px var(--moka-gold), 0 0 20px var(--moka-brown); }
+      to { text-shadow: 0 0 30px var(--moka-gold), 0 0 60px var(--moka-brown); }
+    }
+
+
+    .glass {
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+    }
+    .fade-in { opacity:0; transform:translateY(20px); transition:all 0.8s ease-in-out; }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    /* Carrusel */
+    .carousel { position: relative; overflow: hidden; }
+    .carousel-track { display: flex; transition: transform 0.5s ease; }
+    .carousel img { min-width: 100%; border-radius: 1rem; }
+    .carousel-btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: var(--moka-brown); color: white; border: none;
+      padding: 0.5rem 1rem; cursor: pointer; border-radius: 9999px;
+    }
+    .carousel-btn:hover { background: var(--moka-gold); }
+    .carousel-btn.prev { left: 10px; }
+    .carousel-btn.next { right: 10px; }
+    /* Botones flotantes redes */
+    .social-fixed {
+      position: fixed; right: 20px; top: 50%; transform: translateY(-50%);
+      display: flex; flex-direction: column; gap: 1rem;
+      z-index: 50;
+    }
+    .social-fixed a {
+      background: var(--moka-brown); color: white;
+      padding: 0.75rem; border-radius: 50%;
+      text-align: center; transition: 0.3s;
+    }
+    .social-fixed a:hover { background: var(--moka-gold); transform: scale(1.1); }
+
+    /* Pulso dorado 
+@keyframes pulse {
+  from { transform: scale(1); filter: drop-shadow(0 0 15px rgba(217,166,121,0.8)); }
+  to { transform: scale(1.1); filter: drop-shadow(0 0 30px rgba(217,166,121,1)); }
+}
+
+.logo-highlight {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  filter: drop-shadow(0 0 15px rgba(217,166,121,0.8));
+  animation: pulse 2s infinite alternate;
+  overflow: hidden; /* necesario para el brillo */
+}
+
+/* Brillo recorrido 
+.logo-highlight::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -75%;
+  width: 50%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  100% { left: 125%; }
+}
+
+*/
+@keyframes logoGlow {
+  from {
+    filter: drop-shadow(0 0 10px var(--moka-gold))
+            drop-shadow(0 0 20px var(--moka-brown));
+  }
+  to {
+    filter: drop-shadow(0 0 30px var(--moka-gold))
+            drop-shadow(0 0 60px var(--moka-brown));
+  }
+}
+
+.logo-highlight {
+  width: 350px;
+  height: 350px;
+  display: block;
+  animation: logoGlow 2s ease-in-out infinite alternate;
+}
+
+
+
+
+
+/*Redes Sociales*/ 
+.social-fixed a {
+  background: var(--moka-brown);
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.social-fixed a:hover {
+  background: var(--moka-gold);
+  transform: scale(1.1);
+}
+.social-fixed img {
+  filter: invert(1); /* hace que los logos se vean blancos sobre fondo marrón */
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, var(--moka-brown), var(--moka-gold));
+}
+
+
+.full-section {
+  min-height: 65vh;   /* ocupa toda la altura de la ventana */
+  display: flex;       /* centra contenido */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-spacing {
+  margin-top: 12rem;   /* espacio superior */
+  margin-bottom: 12rem; /* espacio inferior */
+}
+
+.section-top-space {
+  margin-top: 15rem; /* ajusta el valor según lo que quieras */
+}
+
+
+
